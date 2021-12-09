@@ -1,0 +1,727 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/jianshuo/Desktop/CDROM/chapter5/i/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/df3e2f5/
+$(ORANGESKERNEL)	Makefile	/^$(ORANGESKERNEL) : $(OBJS)$/;"	t
+ARDStruct	boot/loader.asm	/^ARDStruct		equ	BaseOfLoaderPhyAddr + _ARDStruct$/;"	d
+ARDStruct	boot/loader_o.asm	/^ARDStruct		equ	BaseOfLoaderPhyAddr + _ARDStruct$/;"	d
+ASM	Makefile	/^ASM		= nasm$/;"	m
+ASMBFLAGS	Makefile	/^ASMBFLAGS	= -I boot\/include\/ $/;"	m
+ASMKFLAGS	Makefile	/^ASMKFLAGS	= -I include\/ -f elf $/;"	m
+AllocPageBase	kernel/kernel.asm	/^AllocPageBase		equ	_AllocPageBase ; + BaseOfKernelFilePhyAddr$/;"	d
+BaseOfKernelFile	kernel/kernel.asm	/^BaseOfKernelFile    equ  08000h ; KERNEL.BIN 被加载到的位置 ----  段地址$/;"	d
+BaseOfKernelFilePhyAddr	kernel/kernel.asm	/^BaseOfKernelFilePhyAddr equ BaseOfKernelFile * 10h$/;"	d
+BaseOfStack	boot/boot.asm	/^BaseOfStack		equ	0100h	; 调试状态下堆栈基地址(栈底, 从这个位置向低地址生长/;"	d
+BaseOfStack	boot/boot.asm	/^BaseOfStack		equ	07c00h	; Boot状态下堆栈基地址(栈底, 从这个位置向低地址生长/;"	d
+BaseOfStack	boot/boot_o.asm	/^BaseOfStack		equ	0100h	; 调试状态下堆栈基地址(栈底, 从这个位置向低地址生长/;"	d
+BaseOfStack	boot/boot_o.asm	/^BaseOfStack		equ	07c00h	; Boot状态下堆栈基地址(栈底, 从这个位置向低地址生长/;"	d
+BaseOfStack	boot/loader.asm	/^BaseOfStack	equ	0100h$/;"	d
+BaseOfStack	boot/loader_o.asm	/^BaseOfStack	equ	0100h$/;"	d
+Begin	boot/loader.asm	/^.Begin:$/;"	l
+Begin	boot/loader_o.asm	/^.Begin:$/;"	l
+BitMap	kernel/kernel.asm	/^BitMap			equ _BitMap - $$  + BaseOfKernelFilePhyAddr$/;"	d
+Bitmap	kernel/alloc_and_free.asm	/^Bitmap: times 32 db 11111111b$/;"	l
+BootMessage	boot/boot.asm	/^BootMessage:$/;"	l
+BootMessage	boot/boot_o.asm	/^BootMessage:		db	"Booting  "; 9字节, 不够则用空格补齐. 序号 0$/;"	d
+CC	Makefile	/^CC		= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS		= -fno-stack-protector -I include\/ -c -fno-builtin$/;"	m
+ClockHandler	kernel/interrupt.asm	/^ClockHandler:$/;"	l
+DASM	Makefile	/^DASM		= ndisasm$/;"	m
+DASMFLAGS	Makefile	/^DASMFLAGS	= -u -o $(ENTRYPOINT) -e $(ENTRYOFFSET)$/;"	m
+DASMOUTPUT	Makefile	/^DASMOUTPUT	= kernel.bin.asm$/;"	m
+DA_32	include/protect.h	/^#define	DA_32	/;"	d
+DA_386CGate	include/protect.h	/^#define	DA_386CGate	/;"	d
+DA_386IGate	include/protect.h	/^#define	DA_386IGate	/;"	d
+DA_386TGate	include/protect.h	/^#define	DA_386TGate	/;"	d
+DA_386TSS	include/protect.h	/^#define	DA_386TSS	/;"	d
+DA_C	include/protect.h	/^#define	DA_C	/;"	d
+DA_CCO	include/protect.h	/^#define	DA_CCO	/;"	d
+DA_CCOR	include/protect.h	/^#define	DA_CCOR	/;"	d
+DA_CR	include/protect.h	/^#define	DA_CR	/;"	d
+DA_DPL0	include/protect.h	/^#define	DA_DPL0	/;"	d
+DA_DPL1	include/protect.h	/^#define	DA_DPL1	/;"	d
+DA_DPL2	include/protect.h	/^#define	DA_DPL2	/;"	d
+DA_DPL3	include/protect.h	/^#define	DA_DPL3	/;"	d
+DA_DR	include/protect.h	/^#define	DA_DR	/;"	d
+DA_DRW	include/protect.h	/^#define	DA_DRW	/;"	d
+DA_DRWA	include/protect.h	/^#define	DA_DRWA	/;"	d
+DA_LDT	include/protect.h	/^#define	DA_LDT	/;"	d
+DA_LIMIT_4K	include/protect.h	/^#define	DA_LIMIT_4K	/;"	d
+DA_TaskGate	include/protect.h	/^#define	DA_TaskGate	/;"	d
+DESCRIPTOR	include/protect.h	/^}DESCRIPTOR;$/;"	t	typeref:struct:s_descriptor
+DispAL	boot/loader.asm	/^DispAL:$/;"	l
+DispAL	boot/loader_o.asm	/^DispAL:$/;"	l
+DispInt	boot/loader.asm	/^DispInt:$/;"	l
+DispInt	boot/loader_o.asm	/^DispInt:$/;"	l
+DispMemInfo	boot/loader.asm	/^DispMemInfo:$/;"	l
+DispMemInfo	boot/loader_o.asm	/^DispMemInfo:$/;"	l
+DispReturn	boot/loader.asm	/^DispReturn:$/;"	l
+DispReturn	boot/loader_o.asm	/^DispReturn:$/;"	l
+DispStr	boot/boot.asm	/^DispStr:$/;"	l
+DispStr	boot/boot_o.asm	/^DispStr:$/;"	l
+DispStr	boot/loader.asm	/^DispStr:$/;"	l
+DispStr	boot/loader_o.asm	/^DispStr:$/;"	l
+DispStrRealMode	boot/loader.asm	/^DispStrRealMode:$/;"	l
+DispStrRealMode	boot/loader_o.asm	/^DispStrRealMode:$/;"	l
+EMU	Makefile	/^EMU     = bochs$/;"	m
+ENTRYOFFSET	Makefile	/^ENTRYOFFSET	=   0x400$/;"	m
+ENTRYPOINT	Makefile	/^ENTRYPOINT	= 0x30400$/;"	m
+EXTERN	include/const.h	/^#define EXTERN /;"	d
+EXTERN	include/global.h	/^#define	EXTERN$/;"	d
+GATE	include/protect.h	/^}GATE;$/;"	t	typeref:struct:s_gate
+GDT_SIZE	include/const.h	/^#define	GDT_SIZE	/;"	d
+GLOBAL_VARIABLES_HERE	kernel/global.c	/^#define GLOBAL_VARIABLES_HERE$/;"	d	file:
+GdtLen	boot/loader.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtLen	boot/loader_o.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtPtr	boot/loader.asm	/^GdtPtr		dw	GdtLen - 1				; 段界限$/;"	d
+GdtPtr	boot/loader_o.asm	/^GdtPtr		dw	GdtLen - 1				; 段界限$/;"	d
+GetFATEntry	boot/boot.asm	/^GetFATEntry:$/;"	l
+GetFATEntry	boot/boot_o.asm	/^GetFATEntry:$/;"	l
+GetFATEntry	boot/loader.asm	/^GetFATEntry:$/;"	l
+GetFATEntry	boot/loader_o.asm	/^GetFATEntry:$/;"	l
+GoOnReading	boot/boot.asm	/^.GoOnReading:$/;"	l
+GoOnReading	boot/boot_o.asm	/^.GoOnReading:$/;"	l
+GoOnReading	boot/loader.asm	/^.GoOnReading:$/;"	l
+GoOnReading	boot/loader_o.asm	/^.GoOnReading:$/;"	l
+IDT_SIZE	include/const.h	/^#define	IDT_SIZE	/;"	d
+INDEX_DUMMY	include/protect.h	/^#define	INDEX_DUMMY	/;"	d
+INDEX_FLAT_C	include/protect.h	/^#define	INDEX_FLAT_C	/;"	d
+INDEX_FLAT_RW	include/protect.h	/^#define	INDEX_FLAT_RW	/;"	d
+INDEX_VIDEO	include/protect.h	/^#define	INDEX_VIDEO	/;"	d
+INT_M_CTL	include/const.h	/^#define INT_M_CTL /;"	d
+INT_M_CTLMASK	include/const.h	/^#define INT_M_CTLMASK /;"	d
+INT_S_CTL	include/const.h	/^#define INT_S_CTL /;"	d
+INT_S_CTLMASK	include/const.h	/^#define INT_S_CTLMASK /;"	d
+INT_VECTOR_BOUNDS	include/protect.h	/^#define	INT_VECTOR_BOUNDS	/;"	d
+INT_VECTOR_BREAKPOINT	include/protect.h	/^#define	INT_VECTOR_BREAKPOINT	/;"	d
+INT_VECTOR_COPROC_ERR	include/protect.h	/^#define	INT_VECTOR_COPROC_ERR	/;"	d
+INT_VECTOR_COPROC_NOT	include/protect.h	/^#define	INT_VECTOR_COPROC_NOT	/;"	d
+INT_VECTOR_COPROC_SEG	include/protect.h	/^#define	INT_VECTOR_COPROC_SEG	/;"	d
+INT_VECTOR_DEBUG	include/protect.h	/^#define	INT_VECTOR_DEBUG	/;"	d
+INT_VECTOR_DIVIDE	include/protect.h	/^#define	INT_VECTOR_DIVIDE	/;"	d
+INT_VECTOR_DOUBLE_FAULT	include/protect.h	/^#define	INT_VECTOR_DOUBLE_FAULT	/;"	d
+INT_VECTOR_INVAL_OP	include/protect.h	/^#define	INT_VECTOR_INVAL_OP	/;"	d
+INT_VECTOR_INVAL_TSS	include/protect.h	/^#define	INT_VECTOR_INVAL_TSS	/;"	d
+INT_VECTOR_IRQ0	include/protect.h	/^#define	INT_VECTOR_IRQ0	/;"	d
+INT_VECTOR_IRQ8	include/protect.h	/^#define	INT_VECTOR_IRQ8	/;"	d
+INT_VECTOR_NMI	include/protect.h	/^#define	INT_VECTOR_NMI	/;"	d
+INT_VECTOR_OVERFLOW	include/protect.h	/^#define	INT_VECTOR_OVERFLOW	/;"	d
+INT_VECTOR_PAGE_FAULT	include/protect.h	/^#define	INT_VECTOR_PAGE_FAULT	/;"	d
+INT_VECTOR_PROTECTION	include/protect.h	/^#define	INT_VECTOR_PROTECTION	/;"	d
+INT_VECTOR_SEG_NOT	include/protect.h	/^#define	INT_VECTOR_SEG_NOT	/;"	d
+INT_VECTOR_STACK_FAULT	include/protect.h	/^#define	INT_VECTOR_STACK_FAULT	/;"	d
+InitKernel	boot/loader.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什/;"	l
+InitKernel	boot/loader_o.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什/;"	l
+KernelEntryPointPhyAddr	kernel/kernel.asm	/^KernelEntryPointPhyAddr equ 030400h ; 注意：1、必须与 MAKEFILE 中参数 -Ttext >的值相/;"	d
+KernelFileName	boot/loader.asm	/^KernelFileName		db	"KERNEL  BIN", 0	; KERNEL.BIN 之文件名$/;"	d
+KernelFileName	boot/loader_o.asm	/^KernelFileName		db	"KERNEL  BIN", 0	; KERNEL.BIN 之文件名$/;"	d
+KeyBoardHandler	kernel/interrupt.asm	/^KeyBoardHandler:$/;"	l
+KillMotor	boot/loader.asm	/^KillMotor:$/;"	l
+KillMotor	boot/loader_o.asm	/^KillMotor:$/;"	l
+LABEL_CMP_FILENAME	boot/boot.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_CMP_FILENAME	boot/boot_o.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_CMP_FILENAME	boot/loader.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_CMP_FILENAME	boot/loader_o.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_DATA	boot/loader.asm	/^LABEL_DATA:$/;"	l
+LABEL_DATA	boot/loader_o.asm	/^LABEL_DATA:$/;"	l
+LABEL_DATA	kernel/kernel.asm	/^LABEL_DATA:$/;"	l
+LABEL_DESC_FLAT_C	boot/loader.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K/;"	l
+LABEL_DESC_FLAT_C	boot/loader_o.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K/;"	l
+LABEL_DESC_FLAT_RW	boot/loader.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4/;"	l
+LABEL_DESC_FLAT_RW	boot/loader_o.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4/;"	l
+LABEL_DESC_VIDEO	boot/loader.asm	/^LABEL_DESC_VIDEO:		Descriptor	 0B8000h,               0ffffh, DA_DRW                         | D/;"	l
+LABEL_DESC_VIDEO	boot/loader_o.asm	/^LABEL_DESC_VIDEO:		Descriptor	 0B8000h,               0ffffh, DA_DRW                         | D/;"	l
+LABEL_DIFFERENT	boot/boot.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_DIFFERENT	boot/boot_o.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_DIFFERENT	boot/loader.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_DIFFERENT	boot/loader_o.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_EVEN_2	boot/boot.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_EVEN_2	boot/boot_o.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_EVEN_2	boot/loader.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_EVEN_2	boot/loader_o.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_FILENAME_FOUND	boot/boot.asm	/^LABEL_FILENAME_FOUND:			; 找到 LOADER.BIN 后便来到这里继续$/;"	l
+LABEL_FILENAME_FOUND	boot/boot_o.asm	/^LABEL_FILENAME_FOUND:			; 找到 LOADER.BIN 后便来到这里继续$/;"	l
+LABEL_FILENAME_FOUND	boot/loader.asm	/^LABEL_FILENAME_FOUND:			; 找到 KERNEL.BIN 后便来到这里继续$/;"	l
+LABEL_FILENAME_FOUND	boot/loader_o.asm	/^LABEL_FILENAME_FOUND:			; 找到 KERNEL.BIN 后便来到这里继续$/;"	l
+LABEL_FILE_LOADED	boot/boot.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_FILE_LOADED	boot/boot_o.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_FILE_LOADED	boot/loader.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_FILE_LOADED	boot/loader_o.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_GDT	boot/loader.asm	/^LABEL_GDT:			Descriptor             0,                    0, 0						; 空描述符$/;"	l
+LABEL_GDT	boot/loader_o.asm	/^LABEL_GDT:			Descriptor             0,                    0, 0						; 空描述符$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/boot.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/boot_o.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/loader.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot/loader_o.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/boot.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/boot_o.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/loader.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOON_LOADING_FILE	boot/loader_o.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/boot.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/boot_o.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/loader.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot/loader_o.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GO_ON	boot/boot.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_GO_ON	boot/boot_o.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_GO_ON	boot/loader.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_GO_ON	boot/loader_o.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_NO_KERNELBIN	boot/loader.asm	/^LABEL_NO_KERNELBIN:$/;"	l
+LABEL_NO_KERNELBIN	boot/loader_o.asm	/^LABEL_NO_KERNELBIN:$/;"	l
+LABEL_NO_LOADERBIN	boot/boot.asm	/^LABEL_NO_LOADERBIN:$/;"	l
+LABEL_NO_LOADERBIN	boot/boot_o.asm	/^LABEL_NO_LOADERBIN:$/;"	l
+LABEL_PM_START	boot/loader.asm	/^LABEL_PM_START:$/;"	l
+LABEL_PM_START	boot/loader_o.asm	/^LABEL_PM_START:$/;"	l
+LABEL_SEARCH_FOR_KERNELBIN	boot/loader.asm	/^LABEL_SEARCH_FOR_KERNELBIN:$/;"	l
+LABEL_SEARCH_FOR_KERNELBIN	boot/loader_o.asm	/^LABEL_SEARCH_FOR_KERNELBIN:$/;"	l
+LABEL_SEARCH_FOR_LOADERBIN	boot/boot.asm	/^LABEL_SEARCH_FOR_LOADERBIN:$/;"	l
+LABEL_SEARCH_FOR_LOADERBIN	boot/boot_o.asm	/^LABEL_SEARCH_FOR_LOADERBIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/boot.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/boot_o.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/loader.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot/loader_o.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_START	boot/boot.asm	/^LABEL_START:	$/;"	l
+LABEL_START	boot/boot_o.asm	/^LABEL_START:	$/;"	l
+LABEL_START	boot/loader.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LABEL_START	boot/loader_o.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LD	Makefile	/^LD		= ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS		= -s -Ttext $(ENTRYPOINT) $/;"	m
+LinearPageBuf	kernel/alloc_and_free.asm	/^LinearPageBuf: times 32 dd 0$/;"	l
+LinearPageBuf	kernel/kernel.asm	/^LinearPageBuf	equ	_LinearPageBuf   + BaseOfKernelFilePhyAddr$/;"	d
+LoadMessage	boot/loader.asm	/^LoadMessage:		db	"Loading  "$/;"	d
+LoadMessage	boot/loader_o.asm	/^LoadMessage:		db	"Loading  "$/;"	d
+LoaderFileName	boot/boot.asm	/^LoaderFileName		db	"LOADER  BIN", 0	; LOADER.BIN 之文件名$/;"	d
+LoaderFileName	boot/boot_o.asm	/^LoaderFileName		db	"LOADER  BIN", 0	; LOADER.BIN 之文件名$/;"	d
+MemChkBuf	boot/loader.asm	/^MemChkBuf		equ	BaseOfLoaderPhyAddr + _MemChkBuf$/;"	d
+MemChkBuf	boot/loader_o.asm	/^MemChkBuf		equ	BaseOfLoaderPhyAddr + _MemChkBuf$/;"	d
+MemChkBuf	kernel/kernel.asm	/^MemChkBuf		equ	_MemChkBuf + BaseOfKernelFilePhyAddr$/;"	d
+MemChkFail	boot/loader.asm	/^.MemChkFail:$/;"	l
+MemChkFail	boot/loader_o.asm	/^.MemChkFail:$/;"	l
+MemChkLoop	boot/loader.asm	/^.MemChkLoop:$/;"	l
+MemChkLoop	boot/loader_o.asm	/^.MemChkLoop:$/;"	l
+MemChkOK	boot/loader.asm	/^.MemChkOK:$/;"	l
+MemChkOK	boot/loader_o.asm	/^.MemChkOK:$/;"	l
+MemCpy	boot/loader.asm	/^MemCpy:$/;"	l
+MemCpy	boot/loader_o.asm	/^MemCpy:$/;"	l
+Message1	boot/boot_o.asm	/^Message1		db	"Ready.   "; 9字节, 不够则用空格补齐. 序号 1$/;"	d
+Message1	boot/loader.asm	/^Message1		db	"Ready.   "$/;"	d
+Message1	boot/loader_o.asm	/^Message1		db	"Ready.   "$/;"	d
+Message2	boot/boot_o.asm	/^Message2		db	"No LOADER"; 9字节, 不够则用空格补齐. 序号 2$/;"	d
+Message2	boot/loader.asm	/^Message2		db	"No KERNEL"$/;"	d
+Message2	boot/loader_o.asm	/^Message2		db	"No KERNEL"$/;"	d
+MessageLength	boot/boot.asm	/^MessageLength		equ	10$/;"	d
+MessageLength	boot/boot_o.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	boot/loader.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	boot/loader_o.asm	/^MessageLength		equ	9$/;"	d
+NoAction	boot/loader.asm	/^.NoAction:$/;"	l
+NoAction	boot/loader_o.asm	/^.NoAction:$/;"	l
+OBJS	Makefile	/^OBJS		=  kernel\/kernel.o kernel\/start.o kernel\/i8259.o kernel\/global.o kernel\/protect.o lib/;"	m
+ORANGESBOOT	Makefile	/^ORANGESBOOT	= boot\/boot.bin boot\/loader.bin$/;"	m
+ORANGESKERNEL	Makefile	/^ORANGESKERNEL	= kernel.bin$/;"	m
+OffsetOfKernelFile	kernel/kernel.asm	/^OffsetOfKernelFile  equ      0h ; KERNEL.BIN 被加载到的位置 ---- 偏移地址$/;"	d
+PG_P	kernel/kernel.asm	/^PG_P        EQU 1   ; 页存在属性位$/;"	d
+PG_RWR	kernel/kernel.asm	/^PG_RWR      EQU 0   ; R\/W 属性位值, 读\/执行$/;"	d
+PG_RWW	kernel/kernel.asm	/^PG_RWW      EQU 2   ; R\/W 属性位值, 读\/写\/执行$/;"	d
+PG_USS	kernel/kernel.asm	/^PG_USS      EQU 0   ; U\/S 属性位值, 系统级$/;"	d
+PG_USU	kernel/kernel.asm	/^PG_USU      EQU 4   ; U\/S 属性位值, 用户级$/;"	d
+PRIVATE	include/const.h	/^#define	PRIVATE	/;"	d
+PRIVILEGE_KRNL	include/const.h	/^#define	PRIVILEGE_KRNL	/;"	d
+PRIVILEGE_TASK	include/const.h	/^#define	PRIVILEGE_TASK	/;"	d
+PRIVILEGE_USER	include/const.h	/^#define	PRIVILEGE_USER	/;"	d
+PUBLIC	include/const.h	/^#define	PUBLIC	/;"	d
+PhysicalPageBuf	kernel/alloc_and_free.asm	/^PhysicalPageBuf: times 32 dd 0$/;"	l
+PhysicalPageBuf	kernel/kernel.asm	/^PhysicalPageBuf	equ	_PhysicalPageBuf  + BaseOfKernelFilePhyAddr$/;"	d
+ReadSector	boot/boot.asm	/^ReadSector:$/;"	l
+ReadSector	boot/boot_o.asm	/^ReadSector:$/;"	l
+ReadSector	boot/loader.asm	/^ReadSector:$/;"	l
+ReadSector	boot/loader_o.asm	/^ReadSector:$/;"	l
+SELECTOR_DUMMY	include/protect.h	/^#define	SELECTOR_DUMMY	/;"	d
+SELECTOR_FLAT_C	include/protect.h	/^#define	SELECTOR_FLAT_C	/;"	d
+SELECTOR_FLAT_RW	include/protect.h	/^#define	SELECTOR_FLAT_RW	/;"	d
+SELECTOR_KERNEL_CS	include/protect.h	/^#define	SELECTOR_KERNEL_CS	/;"	d
+SELECTOR_KERNEL_CS	kernel/kernel.asm	/^SELECTOR_KERNEL_CS	equ	8$/;"	d
+SELECTOR_KERNEL_CS	kernel/kernel_o.asm	/^SELECTOR_KERNEL_CS	equ	8$/;"	d
+SELECTOR_KERNEL_DS	include/protect.h	/^#define	SELECTOR_KERNEL_DS	/;"	d
+SELECTOR_KERNEL_RW	kernel/kernel.asm	/^SELECTOR_KERNEL_RW  equ 010h $/;"	d
+SELECTOR_VIDEO	include/protect.h	/^#define	SELECTOR_VIDEO	/;"	d
+SelectorFlatC	boot/loader.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatC	boot/loader_o.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatRW	boot/loader.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorFlatRW	boot/loader_o.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorVideo	boot/loader.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+SelectorVideo	boot/loader_o.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+SetupPaging	boot/loader.asm	/^SetupPaging:$/;"	l
+SetupPaging	boot/loader_o.asm	/^SetupPaging:$/;"	l
+StackSpace	boot/loader.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+StackSpace	boot/loader_o.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+StackSpace	kernel/kernel.asm	/^StackSpace		resb	2 * 1024$/;"	l
+StackSpace	kernel/kernel_o.asm	/^StackSpace		resb	2 * 1024$/;"	l
+StackTop	kernel/kernel.asm	/^StackTop:		; 栈顶$/;"	l
+StackTop	kernel/kernel_o.asm	/^StackTop:		; 栈顶$/;"	l
+TopOfStack	boot/loader.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+TopOfStack	boot/loader_o.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+UeserIntHandler	kernel/interrupt.asm	/^UeserIntHandler:$/;"	l
+_ARDStruct	boot/loader.asm	/^_ARDStruct:			; Address Range Descriptor Structure$/;"	l
+_ARDStruct	boot/loader_o.asm	/^_ARDStruct:			; Address Range Descriptor Structure$/;"	l
+_AllocPageBase	kernel/kernel.asm	/^_AllocPageBase:			dd	0$/;"	d
+_BitMap	kernel/kernel.asm	/^_BitMap:	times	32		db	11111111b$/;"	l
+_DataLen	kernel/kernel.asm	/^_DataLen: dw 0$/;"	d
+_LinearPageBuf	kernel/kernel.asm	/^_LinearPageBuf:		times	32	dd 0		; 这里存储要返回的线性地址$/;"	l
+_MemChkBuf	boot/loader.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_MemChkBuf	boot/loader_o.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_MemChkBuf	kernel/kernel.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_ORANGES_CONST_H_	include/const.h	/^#define	_ORANGES_CONST_H_$/;"	d
+_ORANGES_PROTECT_H_	include/protect.h	/^#define	_ORANGES_PROTECT_H_$/;"	d
+_ORANGES_TYPE_H_	include/type.h	/^#define	_ORANGES_TYPE_H_$/;"	d
+_PhysicalPageBuf	kernel/kernel.asm	/^_PhysicalPageBuf: 	times	32 	dd 0		; 这里将会存储找到的可用物理页的基址$/;"	l
+_dwBaseAddrHigh	boot/loader.asm	/^	_dwBaseAddrHigh:	dd	0$/;"	d
+_dwBaseAddrHigh	boot/loader_o.asm	/^	_dwBaseAddrHigh:	dd	0$/;"	d
+_dwBaseAddrLow	boot/loader.asm	/^	_dwBaseAddrLow:		dd	0$/;"	d
+_dwBaseAddrLow	boot/loader_o.asm	/^	_dwBaseAddrLow:		dd	0$/;"	d
+_dwDispPos	boot/loader.asm	/^_dwDispPos:			dd	(80 * 6 + 0) * 2	; 屏幕第 6 行, 第 0 列。$/;"	d
+_dwDispPos	boot/loader_o.asm	/^_dwDispPos:			dd	(80 * 6 + 0) * 2	; 屏幕第 6 行, 第 0 列。$/;"	d
+_dwLengthHigh	boot/loader.asm	/^	_dwLengthHigh:		dd	0$/;"	d
+_dwLengthHigh	boot/loader_o.asm	/^	_dwLengthHigh:		dd	0$/;"	d
+_dwLengthLow	boot/loader.asm	/^	_dwLengthLow:		dd	0$/;"	d
+_dwLengthLow	boot/loader_o.asm	/^	_dwLengthLow:		dd	0$/;"	d
+_dwMCRNumber	boot/loader.asm	/^_dwMCRNumber:			dd	0	; Memory Check Result$/;"	d
+_dwMCRNumber	boot/loader_o.asm	/^_dwMCRNumber:			dd	0	; Memory Check Result$/;"	d
+_dwMemSize	boot/loader.asm	/^_dwMemSize:			dd	0$/;"	d
+_dwMemSize	boot/loader_o.asm	/^_dwMemSize:			dd	0$/;"	d
+_dwType	boot/loader.asm	/^	_dwType:		dd	0$/;"	d
+_dwType	boot/loader_o.asm	/^	_dwType:		dd	0$/;"	d
+_num_of_alloc	kernel/kernel.asm	/^_num_of_alloc:		dd	3$/;"	d
+_start	kernel/kernel.asm	/^_start:$/;"	l
+_start	kernel/kernel_o.asm	/^_start:$/;"	l
+_sz1	kernel/kernel.asm	/^_sz1	:			db	"Linear Addr of pages allocated:", 0$/;"	l
+_sz2	kernel/kernel.asm	/^_sz2	:			db	"Freed page:", 0$/;"	l
+_szMemChkTitle	boot/loader.asm	/^_szMemChkTitle:			db	"BaseAddrL BaseAddrH LengthLow LengthHigh   Type", 0Ah, 0$/;"	d
+_szMemChkTitle	boot/loader_o.asm	/^_szMemChkTitle:			db	"BaseAddrL BaseAddrH LengthLow LengthHigh   Type", 0Ah, 0$/;"	d
+_szRAMSize	boot/loader.asm	/^_szRAMSize:			db	"RAM size:", 0$/;"	d
+_szRAMSize	boot/loader_o.asm	/^_szRAMSize:			db	"RAM size:", 0$/;"	d
+_szReturn	boot/loader.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+_szReturn	boot/loader_o.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+_szReturn	kernel/kernel.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+add	boot/boot.asm	/^	add	di, 01Ah		; di -> 首 Sector$/;"	d
+add	boot/boot.asm	/^	add	di, 20h			;      ┃$/;"	d
+add	boot/boot_o.asm	/^	add	di, 01Ah		; di -> 首 Sector$/;"	d
+add	boot/boot_o.asm	/^	add	di, 20h			;      ┃$/;"	d
+add	boot/loader.asm	/^	add	dh, 3			; 从第 3 行往下显示$/;"	d
+add	boot/loader.asm	/^	add	di, 01Ah		; di -> 首 Sector$/;"	d
+add	boot/loader.asm	/^	add	di, 20$/;"	d
+add	boot/loader.asm	/^	add	di, 20h			;     ┃$/;"	d
+add	boot/loader_o.asm	/^	add	dh, 3			; 从第 3 行往下显示$/;"	d
+add	boot/loader_o.asm	/^	add	di, 01Ah		; di -> 首 Sector$/;"	d
+add	boot/loader_o.asm	/^	add	di, 20$/;"	d
+add	boot/loader_o.asm	/^	add	di, 20h			;     ┃$/;"	d
+all	Makefile	/^all : realclean everything$/;"	t
+alloc_pages	kernel/alloc_and_free.asm	/^alloc_pages:$/;"	l
+alloc_pages	kernel/kernel.asm	/^alloc_pages:$/;"	l
+alloc_result	kernel/kernel.asm	/^alloc_result:$/;"	l
+and	boot/boot.asm	/^	and	dh, 1			; dh & 1 = 磁头号$/;"	d
+and	boot/boot.asm	/^	and	di, 0FFE0h		; di -> 当前条目的开始$/;"	d
+and	boot/boot.asm	/^	and	di, 0FFE0h		; else ┓	di &= E0 为了让它指向本条目开头$/;"	d
+and	boot/boot_o.asm	/^	and	dh, 1			; dh & 1 = 磁头号$/;"	d
+and	boot/boot_o.asm	/^	and	di, 0FFE0h		; di -> 当前条目的开始$/;"	d
+and	boot/boot_o.asm	/^	and	di, 0FFE0h		; else ┓	di &= E0 为了让它指向本条目开头$/;"	d
+and	boot/loader.asm	/^	and	dh, 1			; dh & 1 = 磁头号$/;"	d
+and	boot/loader.asm	/^	and	di, 0FFE0h		; else┓	这时di的值不知道是什么, di &= e0 为了让它是 20h 的倍/;"	d
+and	boot/loader.asm	/^	and	di, 0FFF0h		; di -> 当前条目的开始$/;"	d
+and	boot/loader_o.asm	/^	and	dh, 1			; dh & 1 = 磁头号$/;"	d
+and	boot/loader_o.asm	/^	and	di, 0FFE0h		; else┓	这时di的值不知道是什么, di &= e0 为了让它是 20h 的倍/;"	d
+and	boot/loader_o.asm	/^	and	di, 0FFF0h		; di -> 当前条目的开始$/;"	d
+attr	include/protect.h	/^	u8	attr;		\/* P(1) DPL(2) DT(1) TYPE(4) *\/$/;"	m	struct:s_gate	typeref:typename:u8
+attr1	include/protect.h	/^	u8	attr1;			\/* P(1) DPL(2) DT(1) TYPE(4) *\/$/;"	m	struct:s_descriptor	typeref:typename:u8
+bOdd	boot/boot.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	boot/boot_o.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	boot/loader.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	boot/loader_o.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+base_high	include/protect.h	/^	u8	base_high;		\/* Base *\/$/;"	m	struct:s_descriptor	typeref:typename:u8
+base_low	include/protect.h	/^	u16	base_low;		\/* Base *\/$/;"	m	struct:s_descriptor	typeref:typename:u16
+base_mid	include/protect.h	/^	u8	base_mid;		\/* Base *\/$/;"	m	struct:s_descriptor	typeref:typename:u8
+begin	boot/loader.asm	/^.begin:$/;"	l
+begin	boot/loader_o.asm	/^.begin:$/;"	l
+boot/boot.bin	Makefile	/^boot\/boot.bin : boot\/boot.asm boot\/include\/load.inc boot\/include\/fat12hdr.inc$/;"	t
+boot/loader.bin	Makefile	/^boot\/loader.bin : boot\/loader.asm boot\/include\/load.inc \\$/;"	t
+bounds_check	kernel/kernel.asm	/^bounds_check:$/;"	l
+bounds_check	kernel/kernel_o.asm	/^bounds_check:$/;"	l
+breakpoint_exception	kernel/kernel.asm	/^breakpoint_exception:$/;"	l
+breakpoint_exception	kernel/kernel_o.asm	/^breakpoint_exception:$/;"	l
+buildimg	Makefile	/^buildimg :$/;"	t
+clean	Makefile	/^clean :$/;"	t
+cmp	boot/boot.asm	/^	cmp	dx, 0					; ┓循环次数控制,$/;"	d
+cmp	boot/boot.asm	/^	cmp	dx, 0$/;"	d
+cmp	boot/boot_o.asm	/^	cmp	dx, 0					; ┓循环次数控制,$/;"	d
+cmp	boot/boot_o.asm	/^	cmp	dx, 0$/;"	d
+cmp	boot/loader.asm	/^	cmp	dx, 0					; ┓$/;"	d
+cmp	boot/loader.asm	/^	cmp	dx, 0$/;"	d
+cmp	boot/loader_o.asm	/^	cmp	dx, 0					; ┓$/;"	d
+cmp	boot/loader_o.asm	/^	cmp	dx, 0$/;"	d
+common	kernel/interrupt.asm	/^.common:$/;"	l
+common	kernel/kernel.asm	/^.common:$/;"	l
+continue	kernel/interrupt.asm	/^.continue:$/;"	l
+continue	kernel/kernel.asm	/^.continue:$/;"	l
+convert_to_Linear	kernel/alloc_and_free.asm	/^.convert_to_Linear:$/;"	l
+convert_to_Linear	kernel/kernel.asm	/^.convert_to_Linear:$/;"	l
+copr_error	kernel/kernel.asm	/^copr_error:$/;"	l
+copr_error	kernel/kernel_o.asm	/^copr_error:$/;"	l
+copr_not_available	kernel/kernel.asm	/^copr_not_available:$/;"	l
+copr_not_available	kernel/kernel_o.asm	/^copr_not_available:$/;"	l
+copr_seg_overrun	kernel/kernel.asm	/^copr_seg_overrun:$/;"	l
+copr_seg_overrun	kernel/kernel_o.asm	/^copr_seg_overrun:$/;"	l
+csinit	kernel/kernel.asm	/^csinit:$/;"	l
+csinit	kernel/kernel_o.asm	/^csinit:$/;"	l
+cstart	kernel/start.c	/^PUBLIC void cstart()$/;"	f	typeref:typename:PUBLIC void
+dcount	include/protect.h	/^	u8	dcount;		\/* 该字段只在调用门描述符中有效。如果在利用$/;"	m	struct:s_gate	typeref:typename:u8
+dec	boot/boot.asm	/^	dec	dx					; ┛就跳到下一个 Sector$/;"	d
+dec	boot/boot.asm	/^dec	cx$/;"	l
+dec	boot/boot_o.asm	/^	dec	dx					; ┛就跳到下一个 Sector$/;"	d
+dec	boot/boot_o.asm	/^dec	cx$/;"	l
+dec	boot/loader.asm	/^	dec	dx					; ┛$/;"	d
+dec	boot/loader_o.asm	/^	dec	dx					; ┛$/;"	d
+disasm	Makefile	/^disasm :$/;"	t
+disp_color_str	lib/kliba.asm	/^disp_color_str:$/;"	l
+disp_int	lib/klib.c	/^PUBLIC void disp_int(int input)$/;"	f	typeref:typename:PUBLIC void
+disp_pos	include/global.h	/^EXTERN	int		disp_pos;$/;"	v	typeref:typename:EXTERN int
+disp_str	lib/kliba.asm	/^disp_str:$/;"	l
+divide_error	kernel/kernel.asm	/^divide_error:$/;"	l
+divide_error	kernel/kernel_o.asm	/^divide_error:$/;"	l
+double_fault	kernel/kernel.asm	/^double_fault:$/;"	l
+double_fault	kernel/kernel_o.asm	/^double_fault:$/;"	l
+dw	boot/boot.asm	/^dw 	0xaa55				; 结束标志$/;"	l
+dw	boot/boot_o.asm	/^dw 	0xaa55				; 结束标志$/;"	l
+dwBaseAddrHigh	boot/loader.asm	/^	dwBaseAddrHigh	equ	BaseOfLoaderPhyAddr + _dwBaseAddrHigh$/;"	d
+dwBaseAddrHigh	boot/loader_o.asm	/^	dwBaseAddrHigh	equ	BaseOfLoaderPhyAddr + _dwBaseAddrHigh$/;"	d
+dwBaseAddrLow	boot/loader.asm	/^	dwBaseAddrLow	equ	BaseOfLoaderPhyAddr + _dwBaseAddrLow$/;"	d
+dwBaseAddrLow	boot/loader_o.asm	/^	dwBaseAddrLow	equ	BaseOfLoaderPhyAddr + _dwBaseAddrLow$/;"	d
+dwDispPos	boot/loader.asm	/^dwDispPos		equ	BaseOfLoaderPhyAddr + _dwDispPos$/;"	d
+dwDispPos	boot/loader_o.asm	/^dwDispPos		equ	BaseOfLoaderPhyAddr + _dwDispPos$/;"	d
+dwKernelSize	boot/loader.asm	/^dwKernelSize		dd	0		; KERNEL.BIN 文件大小$/;"	d
+dwKernelSize	boot/loader_o.asm	/^dwKernelSize		dd	0		; KERNEL.BIN 文件大小$/;"	d
+dwLengthHigh	boot/loader.asm	/^	dwLengthHigh	equ	BaseOfLoaderPhyAddr + _dwLengthHigh$/;"	d
+dwLengthHigh	boot/loader_o.asm	/^	dwLengthHigh	equ	BaseOfLoaderPhyAddr + _dwLengthHigh$/;"	d
+dwLengthLow	boot/loader.asm	/^	dwLengthLow	equ	BaseOfLoaderPhyAddr + _dwLengthLow$/;"	d
+dwLengthLow	boot/loader_o.asm	/^	dwLengthLow	equ	BaseOfLoaderPhyAddr + _dwLengthLow$/;"	d
+dwMCRNumber	boot/loader.asm	/^dwMCRNumber		equ	BaseOfLoaderPhyAddr + _dwMCRNumber$/;"	d
+dwMCRNumber	boot/loader_o.asm	/^dwMCRNumber		equ	BaseOfLoaderPhyAddr + _dwMCRNumber$/;"	d
+dwMemSize	boot/loader.asm	/^dwMemSize		equ	BaseOfLoaderPhyAddr + _dwMemSize$/;"	d
+dwMemSize	boot/loader_o.asm	/^dwMemSize		equ	BaseOfLoaderPhyAddr + _dwMemSize$/;"	d
+dwType	boot/loader.asm	/^	dwType		equ	BaseOfLoaderPhyAddr + _dwType$/;"	d
+dwType	boot/loader_o.asm	/^	dwType		equ	BaseOfLoaderPhyAddr + _dwType$/;"	d
+emulate	Makefile	/^emulate :$/;"	t
+everything	Makefile	/^everything : $(ORANGESBOOT) $(ORANGESKERNEL)$/;"	t
+exception	kernel/kernel.asm	/^exception:$/;"	l
+exception	kernel/kernel_o.asm	/^exception:$/;"	l
+exception_handler	kernel/protect.c	/^PUBLIC void exception_handler(int vec_no,int err_code,int eip,int cs,int eflags)$/;"	f	typeref:typename:PUBLIC void
+extern	kernel/kernel.asm	/^extern	cstart$/;"	l
+extern	kernel/kernel.asm	/^extern	disp_pos$/;"	l
+extern	kernel/kernel.asm	/^extern	exception_handler$/;"	l
+extern	kernel/kernel.asm	/^extern	gdt_ptr$/;"	l
+extern	kernel/kernel.asm	/^extern	idt_ptr$/;"	l
+extern	kernel/kernel.asm	/^extern	spurious_irq$/;"	l
+extern	kernel/kernel.asm	/^extern 	disp_str$/;"	l
+extern	kernel/kernel.asm	/^extern  ClockHandler$/;"	l
+extern	kernel/kernel.asm	/^extern  KeyBoardHandler$/;"	l
+extern	kernel/kernel.asm	/^extern  UeserIntHandler$/;"	l
+extern	kernel/kernel.asm	/^extern  disp_int$/;"	l
+extern	kernel/kernel_o.asm	/^extern	cstart$/;"	l
+extern	kernel/kernel_o.asm	/^extern	disp_pos$/;"	l
+extern	kernel/kernel_o.asm	/^extern	exception_handler$/;"	l
+extern	kernel/kernel_o.asm	/^extern	gdt_ptr$/;"	l
+extern	kernel/kernel_o.asm	/^extern	idt_ptr$/;"	l
+extern	kernel/kernel_o.asm	/^extern	spurious_irq$/;"	l
+extern	lib/kliba.asm	/^extern	disp_pos$/;"	l
+final	Makefile	/^final : all clean$/;"	t
+finish_alloc_phy	kernel/alloc_and_free.asm	/^.finish_alloc_phy:		; 现在已经把找到的可用的物理页放在PhysicalPageBuf中$/;"	l
+finish_alloc_phy	kernel/kernel.asm	/^.finish_alloc_phy:		; 现在已经把找到的可用的物理页放在PhysicalPageBuf中$/;"	l
+free_one_Linear	kernel/alloc_and_free.asm	/^.free_one_Linear:$/;"	l
+free_one_Linear	kernel/kernel.asm	/^.free_one_Linear:$/;"	l
+free_pages	kernel/alloc_and_free.asm	/^free_pages:$/;"	l
+free_pages	kernel/kernel.asm	/^free_pages:$/;"	l
+gdt	include/global.h	/^EXTERN	DESCRIPTOR	gdt[GDT_SIZE];$/;"	v	typeref:typename:EXTERN DESCRIPTOR[]
+gdt_ptr	include/global.h	/^EXTERN	u8		gdt_ptr[6];	\/* 0~15:Limit  16~47:Base *\/$/;"	v	typeref:typename:EXTERN u8[6]
+general_protection	kernel/kernel.asm	/^general_protection:$/;"	l
+general_protection	kernel/kernel_o.asm	/^general_protection:$/;"	l
+global	kernel/alloc_and_free.asm	/^global Bitmap$/;"	l
+global	kernel/alloc_and_free.asm	/^global alloc_pages$/;"	l
+global	kernel/alloc_and_free.asm	/^global free_pages$/;"	l
+global	kernel/interrupt.asm	/^global ClockHandler$/;"	l
+global	kernel/interrupt.asm	/^global KeyBoardHandler$/;"	l
+global	kernel/interrupt.asm	/^global UeserIntHandler$/;"	l
+global	kernel/kernel.asm	/^global	bounds_check$/;"	l
+global	kernel/kernel.asm	/^global	breakpoint_exception$/;"	l
+global	kernel/kernel.asm	/^global	copr_error$/;"	l
+global	kernel/kernel.asm	/^global	copr_not_available$/;"	l
+global	kernel/kernel.asm	/^global	copr_seg_overrun$/;"	l
+global	kernel/kernel.asm	/^global	divide_error$/;"	l
+global	kernel/kernel.asm	/^global	double_fault$/;"	l
+global	kernel/kernel.asm	/^global	general_protection$/;"	l
+global	kernel/kernel.asm	/^global	inval_opcode$/;"	l
+global	kernel/kernel.asm	/^global	inval_tss$/;"	l
+global	kernel/kernel.asm	/^global	nmi$/;"	l
+global	kernel/kernel.asm	/^global	overflow$/;"	l
+global	kernel/kernel.asm	/^global	page_fault$/;"	l
+global	kernel/kernel.asm	/^global	segment_not_present$/;"	l
+global	kernel/kernel.asm	/^global	single_step_exception$/;"	l
+global	kernel/kernel.asm	/^global	stack_exception$/;"	l
+global	kernel/kernel.asm	/^global  hwint00$/;"	l
+global	kernel/kernel.asm	/^global  hwint01$/;"	l
+global	kernel/kernel.asm	/^global  hwint02$/;"	l
+global	kernel/kernel.asm	/^global  hwint03$/;"	l
+global	kernel/kernel.asm	/^global  hwint04$/;"	l
+global	kernel/kernel.asm	/^global  hwint05$/;"	l
+global	kernel/kernel.asm	/^global  hwint06$/;"	l
+global	kernel/kernel.asm	/^global  hwint07$/;"	l
+global	kernel/kernel.asm	/^global  hwint08$/;"	l
+global	kernel/kernel.asm	/^global  hwint09$/;"	l
+global	kernel/kernel.asm	/^global  hwint10$/;"	l
+global	kernel/kernel.asm	/^global  hwint11$/;"	l
+global	kernel/kernel.asm	/^global  hwint12$/;"	l
+global	kernel/kernel.asm	/^global  hwint13$/;"	l
+global	kernel/kernel.asm	/^global  hwint14$/;"	l
+global	kernel/kernel.asm	/^global  hwint15$/;"	l
+global	kernel/kernel.asm	/^global _start	; 导出 _start$/;"	l
+global	kernel/kernel_o.asm	/^global	bounds_check$/;"	l
+global	kernel/kernel_o.asm	/^global	breakpoint_exception$/;"	l
+global	kernel/kernel_o.asm	/^global	copr_error$/;"	l
+global	kernel/kernel_o.asm	/^global	copr_not_available$/;"	l
+global	kernel/kernel_o.asm	/^global	copr_seg_overrun$/;"	l
+global	kernel/kernel_o.asm	/^global	divide_error$/;"	l
+global	kernel/kernel_o.asm	/^global	double_fault$/;"	l
+global	kernel/kernel_o.asm	/^global	general_protection$/;"	l
+global	kernel/kernel_o.asm	/^global	inval_opcode$/;"	l
+global	kernel/kernel_o.asm	/^global	inval_tss$/;"	l
+global	kernel/kernel_o.asm	/^global	nmi$/;"	l
+global	kernel/kernel_o.asm	/^global	overflow$/;"	l
+global	kernel/kernel_o.asm	/^global	page_fault$/;"	l
+global	kernel/kernel_o.asm	/^global	segment_not_present$/;"	l
+global	kernel/kernel_o.asm	/^global	single_step_exception$/;"	l
+global	kernel/kernel_o.asm	/^global	stack_exception$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint00$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint01$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint02$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint03$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint04$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint05$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint06$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint07$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint08$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint09$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint10$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint11$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint12$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint13$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint14$/;"	l
+global	kernel/kernel_o.asm	/^global  hwint15$/;"	l
+global	kernel/kernel_o.asm	/^global _start	; 导出 _start$/;"	l
+global	lib/kliba.asm	/^global	disp_color_str$/;"	l
+global	lib/kliba.asm	/^global	disp_str$/;"	l
+global	lib/kliba.asm	/^global	in_byte$/;"	l
+global	lib/kliba.asm	/^global	out_byte$/;"	l
+global	lib/string.asm	/^global	memcpy$/;"	l
+hwint00	kernel/kernel.asm	/^hwint00:                ; Interrupt routine for irq 0 (the clock).$/;"	l
+hwint00	kernel/kernel_o.asm	/^hwint00:                ; Interrupt routine for irq 0 (the clock).$/;"	l
+hwint01	kernel/kernel.asm	/^hwint01:                ; Interrupt routine for irq 1 (keyboard)$/;"	l
+hwint01	kernel/kernel_o.asm	/^hwint01:                ; Interrupt routine for irq 1 (keyboard)$/;"	l
+hwint02	kernel/kernel.asm	/^hwint02:                ; Interrupt routine for irq 2 (cascade!)$/;"	l
+hwint02	kernel/kernel_o.asm	/^hwint02:                ; Interrupt routine for irq 2 (cascade!)$/;"	l
+hwint03	kernel/kernel.asm	/^hwint03:                ; Interrupt routine for irq 3 (second serial)$/;"	l
+hwint03	kernel/kernel_o.asm	/^hwint03:                ; Interrupt routine for irq 3 (second serial)$/;"	l
+hwint04	kernel/kernel.asm	/^hwint04:                ; Interrupt routine for irq 4 (first serial)$/;"	l
+hwint04	kernel/kernel_o.asm	/^hwint04:                ; Interrupt routine for irq 4 (first serial)$/;"	l
+hwint05	kernel/kernel.asm	/^hwint05:                ; Interrupt routine for irq 5 (XT winchester)$/;"	l
+hwint05	kernel/kernel_o.asm	/^hwint05:                ; Interrupt routine for irq 5 (XT winchester)$/;"	l
+hwint06	kernel/kernel.asm	/^hwint06:                ; Interrupt routine for irq 6 (floppy)$/;"	l
+hwint06	kernel/kernel_o.asm	/^hwint06:                ; Interrupt routine for irq 6 (floppy)$/;"	l
+hwint07	kernel/kernel.asm	/^hwint07:                ; Interrupt routine for irq 7 (printer)$/;"	l
+hwint07	kernel/kernel_o.asm	/^hwint07:                ; Interrupt routine for irq 7 (printer)$/;"	l
+hwint08	kernel/kernel.asm	/^hwint08:                ; Interrupt routine for irq 8 (realtime clock).$/;"	l
+hwint08	kernel/kernel_o.asm	/^hwint08:                ; Interrupt routine for irq 8 (realtime clock).$/;"	l
+hwint09	kernel/kernel.asm	/^hwint09:                ; Interrupt routine for irq 9 (irq 2 redirected)$/;"	l
+hwint09	kernel/kernel_o.asm	/^hwint09:                ; Interrupt routine for irq 9 (irq 2 redirected)$/;"	l
+hwint10	kernel/kernel.asm	/^hwint10:                ; Interrupt routine for irq 10$/;"	l
+hwint10	kernel/kernel_o.asm	/^hwint10:                ; Interrupt routine for irq 10$/;"	l
+hwint11	kernel/kernel.asm	/^hwint11:                ; Interrupt routine for irq 11$/;"	l
+hwint11	kernel/kernel_o.asm	/^hwint11:                ; Interrupt routine for irq 11$/;"	l
+hwint12	kernel/kernel.asm	/^hwint12:                ; Interrupt routine for irq 12$/;"	l
+hwint12	kernel/kernel_o.asm	/^hwint12:                ; Interrupt routine for irq 12$/;"	l
+hwint13	kernel/kernel.asm	/^hwint13:                ; Interrupt routine for irq 13 (FPU exception)$/;"	l
+hwint13	kernel/kernel_o.asm	/^hwint13:                ; Interrupt routine for irq 13 (FPU exception)$/;"	l
+hwint14	kernel/kernel.asm	/^hwint14:                ; Interrupt routine for irq 14 (AT winchester)$/;"	l
+hwint14	kernel/kernel_o.asm	/^hwint14:                ; Interrupt routine for irq 14 (AT winchester)$/;"	l
+hwint15	kernel/kernel.asm	/^hwint15:                ; Interrupt routine for irq 15$/;"	l
+hwint15	kernel/kernel_o.asm	/^hwint15:                ; Interrupt routine for irq 15$/;"	l
+idt	include/global.h	/^EXTERN	GATE		idt[IDT_SIZE];$/;"	v	typeref:typename:EXTERN GATE[]
+idt_ptr	include/global.h	/^EXTERN	u8		idt_ptr[6];	\/* 0~15:Limit  16~47:Base *\/$/;"	v	typeref:typename:EXTERN u8[6]
+image	Makefile	/^image : final buildimg emulate$/;"	t
+in_byte	lib/kliba.asm	/^in_byte:$/;"	l
+inc	boot/boot.asm	/^	inc	di$/;"	d
+inc	boot/boot_o.asm	/^	inc	di$/;"	d
+inc	boot/loader.asm	/^	inc	di$/;"	d
+inc	boot/loader_o.asm	/^	inc	di$/;"	d
+init_8259A	kernel/i8259.c	/^PUBLIC void init_8259A()$/;"	f	typeref:typename:PUBLIC void
+init_idt_desc	kernel/protect.c	/^PRIVATE void init_idt_desc(unsigned char vector, u8 desc_type,$/;"	f	typeref:typename:PRIVATE void
+init_prot	kernel/protect.c	/^PUBLIC void init_prot()$/;"	f	typeref:typename:PUBLIC void
+int_handler	include/type.h	/^typedef	void	(*int_handler)	();$/;"	t	typeref:typename:void (*)()
+inval_opcode	kernel/kernel.asm	/^inval_opcode:$/;"	l
+inval_opcode	kernel/kernel_o.asm	/^inval_opcode:$/;"	l
+inval_tss	kernel/kernel.asm	/^inval_tss:$/;"	l
+inval_tss	kernel/kernel_o.asm	/^inval_tss:$/;"	l
+io_delay	kernel/interrupt.asm	/^io_delay:$/;"	l
+io_delay	kernel/kernel.asm	/^io_delay:$/;"	l
+itoa	lib/klib.c	/^PUBLIC char * itoa(char * str, int num)$/;"	f	typeref:typename:PUBLIC char *
+kernel/global.o	Makefile	/^kernel\/global.o : kernel\/global.c$/;"	t
+kernel/i8259.o	Makefile	/^kernel\/i8259.o : kernel\/i8259.c include\/type.h include\/const.h include\/protect.h \\$/;"	t
+kernel/interrupt.o	Makefile	/^kernel\/interrupt.o : kernel\/interrupt.asm$/;"	t
+kernel/kernel.o	Makefile	/^kernel\/kernel.o : kernel\/kernel.asm$/;"	t
+kernel/protect.o	Makefile	/^kernel\/protect.o : kernel\/protect.c$/;"	t
+kernel/start.o	Makefile	/^kernel\/start.o: kernel\/start.c include\/type.h include\/const.h include\/protect.h \\$/;"	t
+lib/klib.o	Makefile	/^lib\/klib.o : lib\/klib.c$/;"	t
+lib/kliba.o	Makefile	/^lib\/kliba.o : lib\/kliba.asm$/;"	t
+lib/string.o	Makefile	/^lib\/string.o : lib\/string.asm$/;"	t
+limit_high_attr2	include/protect.h	/^	u8	limit_high_attr2;	\/* G(1) D(1) 0(1) AVL(1) LimitHigh(4) *\/$/;"	m	struct:s_descriptor	typeref:typename:u8
+limit_low	include/protect.h	/^	u16	limit_low;		\/* Limit *\/$/;"	m	struct:s_descriptor	typeref:typename:u16
+line2	boot/boot.asm	/^line2 db " \/ @ @ \\  ";     $/;"	d
+line3	boot/boot.asm	/^line3 db "( > o < ) ";     $/;"	d
+line4	boot/boot.asm	/^line4 db " '>>*<<'  ";$/;"	d
+line5	boot/boot.asm	/^line5 db " \/  0  \\  ";$/;"	d
+loop	boot/loader.asm	/^.loop:					;{$/;"	l
+loop	boot/loader_o.asm	/^.loop:					;{$/;"	l
+memcpy	lib/string.asm	/^memcpy:$/;"	l
+mov	boot/boot.asm	/^	mov	dh, 1			; "Booting  "$/;"	d
+mov	boot/boot.asm	/^	mov	dh, al			; dh <- y$/;"	d
+mov	boot/boot.asm	/^	mov	di, OffsetOfLoader	; es:di -> BaseOfLoader:0100 = BaseOfLoader*10h+100$/;"	d
+mov	boot/boot.asm	/^	mov	dl, 0$/;"	d
+mov	boot/boot.asm	/^	mov	dl, [BS_DrvNum]		; 驱动器号 (0 表示 A 盘)$/;"	d
+mov	boot/boot.asm	/^	mov	ds, ax$/;"	d
+mov	boot/boot.asm	/^	mov	dx, 0184fh		; 右下角: (80, 50)$/;"	d
+mov	boot/boot.asm	/^	mov	dx, 10h$/;"	d
+mov	boot/boot.asm	/^	mov	dx, RootDirSectors$/;"	d
+mov	boot/boot.asm	/^	mov dh, 0$/;"	d
+mov	boot/boot.asm	/^	mov dh, 2$/;"	d
+mov	boot/boot.asm	/^	mov dh, 3$/;"	d
+mov	boot/boot.asm	/^	mov dh, 4$/;"	d
+mov	boot/boot_o.asm	/^	mov	dh, 0			; "Booting  "$/;"	d
+mov	boot/boot_o.asm	/^	mov	dh, 1			; "Ready."$/;"	d
+mov	boot/boot_o.asm	/^	mov	dh, 2			; "No LOADER."$/;"	d
+mov	boot/boot_o.asm	/^	mov	dh, al			; dh <- y$/;"	d
+mov	boot/boot_o.asm	/^	mov	di, OffsetOfLoader	; es:di -> BaseOfLoader:0100 = BaseOfLoader*10h+100$/;"	d
+mov	boot/boot_o.asm	/^	mov	dl, 0$/;"	d
+mov	boot/boot_o.asm	/^	mov	dl, [BS_DrvNum]		; 驱动器号 (0 表示 A 盘)$/;"	d
+mov	boot/boot_o.asm	/^	mov	ds, ax$/;"	d
+mov	boot/boot_o.asm	/^	mov	dx, 0184fh		; 右下角: (80, 50)$/;"	d
+mov	boot/boot_o.asm	/^	mov	dx, 10h$/;"	d
+mov	boot/boot_o.asm	/^	mov	dx, RootDirSectors$/;"	d
+mov	boot/loader.asm	/^	mov	dh, al			; dh <- y$/;"	d
+mov	boot/loader.asm	/^	mov	di, OffsetOfKernelFile	; es:di -> BaseOfKernelFile:???? = BaseOfKernelFile*10h+????$/;"	d
+mov	boot/loader.asm	/^	mov	di, _MemChkBuf		; es:di 指向一个地址范围描述符结构（Address Range Descriptor /;"	d
+mov	boot/loader.asm	/^	mov	dl, 0$/;"	d
+mov	boot/loader.asm	/^	mov	dl, [BS_DrvNum]		; 驱动器号 (0 表示 A 盘)$/;"	d
+mov	boot/loader.asm	/^	mov	dl, al$/;"	d
+mov	boot/loader.asm	/^	mov	ds, ax$/;"	d
+mov	boot/loader.asm	/^	mov	dx, 03F2h$/;"	d
+mov	boot/loader.asm	/^	mov	dx, 10h$/;"	d
+mov	boot/loader.asm	/^	mov	dx, RootDirSectors$/;"	d
+mov	boot/loader_o.asm	/^	mov	dh, 0			; "Loading  "$/;"	d
+mov	boot/loader_o.asm	/^	mov	dh, 1			; "Ready."$/;"	d
+mov	boot/loader_o.asm	/^	mov	dh, 2			; "No KERNEL."$/;"	d
+mov	boot/loader_o.asm	/^	mov	dh, al			; dh <- y$/;"	d
+mov	boot/loader_o.asm	/^	mov	di, OffsetOfKernelFile	; es:di -> BaseOfKernelFile:???? = BaseOfKernelFile*10h+????$/;"	d
+mov	boot/loader_o.asm	/^	mov	di, _MemChkBuf		; es:di 指向一个地址范围描述符结构（Address Range Descriptor /;"	d
+mov	boot/loader_o.asm	/^	mov	dl, 0$/;"	d
+mov	boot/loader_o.asm	/^	mov	dl, [BS_DrvNum]		; 驱动器号 (0 表示 A 盘)$/;"	d
+mov	boot/loader_o.asm	/^	mov	dl, al$/;"	d
+mov	boot/loader_o.asm	/^	mov	ds, ax$/;"	d
+mov	boot/loader_o.asm	/^	mov	dx, 03F2h$/;"	d
+mov	boot/loader_o.asm	/^	mov	dx, 10h$/;"	d
+mov	boot/loader_o.asm	/^	mov	dx, RootDirSectors$/;"	d
+mov	kernel/alloc_and_free.asm	/^	mov di, ax$/;"	d
+mov	kernel/alloc_and_free.asm	/^	mov dx, 0$/;"	d
+mov	kernel/kernel.asm	/^	mov di, ax$/;"	d
+mov	kernel/kernel.asm	/^	mov ds, ax$/;"	d
+mov	kernel/kernel.asm	/^	mov dx, 0$/;"	d
+mul	boot/boot.asm	/^	mul	dh$/;"	d
+mul	boot/boot_o.asm	/^	mul	dh$/;"	d
+mul	boot/loader.asm	/^	mul	dh$/;"	d
+mul	boot/loader_o.asm	/^	mul	dh$/;"	d
+next_bit	kernel/alloc_and_free.asm	/^.next_bit:$/;"	l
+next_bit	kernel/kernel.asm	/^.next_bit:$/;"	l
+next_byte	kernel/alloc_and_free.asm	/^.next_byte:$/;"	l
+next_byte	kernel/kernel.asm	/^.next_byte:$/;"	l
+nmi	kernel/kernel.asm	/^nmi:$/;"	l
+nmi	kernel/kernel_o.asm	/^nmi:$/;"	l
+no	kernel/interrupt.asm	/^.no:$/;"	l
+no	kernel/kernel.asm	/^.no:$/;"	l
+no_remainder	boot/loader.asm	/^.no_remainder:$/;"	l
+no_remainder	boot/loader_o.asm	/^.no_remainder:$/;"	l
+num_of_alloc	kernel/kernel.asm	/^num_of_alloc	equ	_num_of_alloc   + BaseOfKernelFilePhyAddr$/;"	d
+offset_high	include/protect.h	/^	u16	offset_high;	\/* Offset High *\/$/;"	m	struct:s_gate	typeref:typename:u16
+offset_low	include/protect.h	/^	u16	offset_low;	\/* Offset Low *\/$/;"	m	struct:s_gate	typeref:typename:u16
+one_byte_over	kernel/alloc_and_free.asm	/^.one_byte_over:$/;"	l
+one_byte_over	kernel/kernel.asm	/^.one_byte_over:$/;"	l
+org	boot/loader.asm	/^org  0100h$/;"	l
+org	boot/loader_o.asm	/^org  0100h$/;"	l
+out	boot/loader.asm	/^	out	dx, al$/;"	d
+out	boot/loader_o.asm	/^	out	dx, al$/;"	d
+out	lib/kliba.asm	/^	out	dx, al$/;"	d
+out_byte	lib/kliba.asm	/^out_byte:$/;"	l
+overflow	kernel/kernel.asm	/^overflow:$/;"	l
+overflow	kernel/kernel_o.asm	/^overflow:$/;"	l
+page_fault	kernel/kernel.asm	/^page_fault:$/;"	l
+page_fault	kernel/kernel_o.asm	/^page_fault:$/;"	l
+pop	boot/boot.asm	/^	pop	dx$/;"	d
+pop	boot/boot_o.asm	/^	pop	dx$/;"	d
+pop	boot/loader.asm	/^	pop	dx$/;"	d
+pop	boot/loader_o.asm	/^	pop	dx$/;"	d
+push	boot/boot.asm	/^	push	dx$/;"	d
+push	boot/boot_o.asm	/^	push	dx$/;"	d
+push	boot/loader.asm	/^	push	dx$/;"	d
+push	boot/loader_o.asm	/^	push	dx$/;"	d
+realclean	Makefile	/^realclean :$/;"	t
+s_descriptor	include/protect.h	/^typedef struct s_descriptor		\/* 共 8 个字节 *\/$/;"	s
+s_gate	include/protect.h	/^typedef struct s_gate$/;"	s
+segment_not_present	kernel/kernel.asm	/^segment_not_present:$/;"	l
+segment_not_present	kernel/kernel_o.asm	/^segment_not_present:$/;"	l
+selector	include/protect.h	/^	u16	selector;	\/* Selector *\/$/;"	m	struct:s_gate	typeref:typename:u16
+set_PTE	kernel/alloc_and_free.asm	/^.set_PTE:$/;"	l
+set_PTE	kernel/kernel.asm	/^.set_PTE:$/;"	l
+single_step_exception	kernel/kernel.asm	/^single_step_exception:$/;"	l
+single_step_exception	kernel/kernel_o.asm	/^single_step_exception:$/;"	l
+spurious_irq	kernel/i8259.c	/^PUBLIC void spurious_irq(int irq)$/;"	f	typeref:typename:PUBLIC void
+stack_exception	kernel/kernel.asm	/^stack_exception:$/;"	l
+stack_exception	kernel/kernel_o.asm	/^stack_exception:$/;"	l
+szMemChkTitle	boot/loader.asm	/^szMemChkTitle		equ	BaseOfLoaderPhyAddr + _szMemChkTitle$/;"	d
+szMemChkTitle	boot/loader_o.asm	/^szMemChkTitle		equ	BaseOfLoaderPhyAddr + _szMemChkTitle$/;"	d
+szRAMSize	boot/loader.asm	/^szRAMSize		equ	BaseOfLoaderPhyAddr + _szRAMSize$/;"	d
+szRAMSize	boot/loader_o.asm	/^szRAMSize		equ	BaseOfLoaderPhyAddr + _szRAMSize$/;"	d
+szReturn	boot/loader.asm	/^szReturn		equ	BaseOfLoaderPhyAddr + _szReturn$/;"	d
+szReturn	boot/loader_o.asm	/^szReturn		equ	BaseOfLoaderPhyAddr + _szReturn$/;"	d
+times	boot/boot.asm	/^times 	510-($-$$)	db	0	; 填充剩下的空间，使生成的二进制代码恰好为512字节$/;"	l
+times	boot/boot_o.asm	/^times 	510-($-$$)	db	0	; 填充剩下的空间，使生成的二进制代码恰好为512字节$/;"	l
+u16	include/type.h	/^typedef	unsigned short		u16;$/;"	t	typeref:typename:unsigned short
+u32	include/type.h	/^typedef	unsigned int		u32;$/;"	t	typeref:typename:unsigned int
+u8	include/type.h	/^typedef	unsigned char		u8;$/;"	t	typeref:typename:unsigned char
+wRootDirSizeForLoop	boot/boot.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数, 在循环中会递减/;"	d
+wRootDirSizeForLoop	boot/boot_o.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数, 在循环中会递减/;"	d
+wRootDirSizeForLoop	boot/loader.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数$/;"	d
+wRootDirSizeForLoop	boot/loader_o.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数$/;"	d
+wSectorNo	boot/boot.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	boot/boot_o.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	boot/loader.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	boot/loader_o.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+xor	boot/boot.asm	/^	xor	dl, dl	; ┣ 软驱复位$/;"	d
+xor	boot/boot.asm	/^	xor	dx, dx			; 现在 ax 中是 FATEntry 在 FAT 中的偏移量. 下面来计算 FATEntry 在哪/;"	d
+xor	boot/boot_o.asm	/^	xor	dl, dl	; ┣ 软驱复位$/;"	d
+xor	boot/boot_o.asm	/^	xor	dx, dx			; 现在 ax 中是 FATEntry 在 FAT 中的偏移量. 下面来计算 FATEntry 在哪/;"	d
+xor	boot/loader.asm	/^	xor	dl, dl	; ┣ 软驱复位$/;"	d
+xor	boot/loader.asm	/^	xor	dx, dx			; 现在 ax 中是 FATEntry 在 FAT 中的偏移量. 下面来计算 FATEntry 在哪/;"	d
+xor	boot/loader_o.asm	/^	xor	dl, dl	; ┣ 软驱复位$/;"	d
+xor	boot/loader_o.asm	/^	xor	dx, dx			; 现在 ax 中是 FATEntry 在 FAT 中的偏移量. 下面来计算 FATEntry 在哪/;"	d
+xor	kernel/alloc_and_free.asm	/^	xor dx, dx		; dx:ax中是被除数，除以1024得到PDE所在的页目录$/;"	d
+xor	kernel/kernel.asm	/^	xor dx, dx		; dx:ax中是被除数，除以1024得到PDE所在的页目录$/;"	d

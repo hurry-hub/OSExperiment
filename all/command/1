@@ -1,0 +1,10 @@
+#include "stdio.h"
+#include "my_global.h"
+
+
+
+int main(int argc, char * argv[])
+{
+	parity_check_closed = 0;
+	return 0;
+}

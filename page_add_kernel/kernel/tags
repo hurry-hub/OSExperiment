@@ -1,0 +1,95 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/jianshuo/Desktop/CDROM/chapter5/i/kernel/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/df3e2f5/
+GLOBAL_VARIABLES_HERE	global.c	/^#define GLOBAL_VARIABLES_HERE$/;"	d	file:
+SELECTOR_KERNEL_CS	kernel.asm	/^SELECTOR_KERNEL_CS	equ	8$/;"	d
+StackSpace	kernel.asm	/^StackSpace		resb	2 * 1024$/;"	l
+StackTop	kernel.asm	/^StackTop:		; 栈顶$/;"	l
+_start	kernel.asm	/^_start:$/;"	l
+bounds_check	kernel.asm	/^bounds_check:$/;"	l
+breakpoint_exception	kernel.asm	/^breakpoint_exception:$/;"	l
+copr_error	kernel.asm	/^copr_error:$/;"	l
+copr_not_available	kernel.asm	/^copr_not_available:$/;"	l
+copr_seg_overrun	kernel.asm	/^copr_seg_overrun:$/;"	l
+csinit	kernel.asm	/^csinit:$/;"	l
+cstart	start.c	/^PUBLIC void cstart()$/;"	f	typeref:typename:PUBLIC void
+divide_error	kernel.asm	/^divide_error:$/;"	l
+double_fault	kernel.asm	/^double_fault:$/;"	l
+exception	kernel.asm	/^exception:$/;"	l
+exception_handler	protect.c	/^PUBLIC void exception_handler(int vec_no,int err_code,int eip,int cs,int eflags)$/;"	f	typeref:typename:PUBLIC void
+extern	kernel.asm	/^extern	cstart$/;"	l
+extern	kernel.asm	/^extern	disp_pos$/;"	l
+extern	kernel.asm	/^extern	exception_handler$/;"	l
+extern	kernel.asm	/^extern	gdt_ptr$/;"	l
+extern	kernel.asm	/^extern	idt_ptr$/;"	l
+extern	kernel.asm	/^extern	spurious_irq$/;"	l
+general_protection	kernel.asm	/^general_protection:$/;"	l
+global	kernel.asm	/^global	bounds_check$/;"	l
+global	kernel.asm	/^global	breakpoint_exception$/;"	l
+global	kernel.asm	/^global	copr_error$/;"	l
+global	kernel.asm	/^global	copr_not_available$/;"	l
+global	kernel.asm	/^global	copr_seg_overrun$/;"	l
+global	kernel.asm	/^global	divide_error$/;"	l
+global	kernel.asm	/^global	double_fault$/;"	l
+global	kernel.asm	/^global	general_protection$/;"	l
+global	kernel.asm	/^global	inval_opcode$/;"	l
+global	kernel.asm	/^global	inval_tss$/;"	l
+global	kernel.asm	/^global	nmi$/;"	l
+global	kernel.asm	/^global	overflow$/;"	l
+global	kernel.asm	/^global	page_fault$/;"	l
+global	kernel.asm	/^global	segment_not_present$/;"	l
+global	kernel.asm	/^global	single_step_exception$/;"	l
+global	kernel.asm	/^global	stack_exception$/;"	l
+global	kernel.asm	/^global  hwint00$/;"	l
+global	kernel.asm	/^global  hwint01$/;"	l
+global	kernel.asm	/^global  hwint02$/;"	l
+global	kernel.asm	/^global  hwint03$/;"	l
+global	kernel.asm	/^global  hwint04$/;"	l
+global	kernel.asm	/^global  hwint05$/;"	l
+global	kernel.asm	/^global  hwint06$/;"	l
+global	kernel.asm	/^global  hwint07$/;"	l
+global	kernel.asm	/^global  hwint08$/;"	l
+global	kernel.asm	/^global  hwint09$/;"	l
+global	kernel.asm	/^global  hwint10$/;"	l
+global	kernel.asm	/^global  hwint11$/;"	l
+global	kernel.asm	/^global  hwint12$/;"	l
+global	kernel.asm	/^global  hwint13$/;"	l
+global	kernel.asm	/^global  hwint14$/;"	l
+global	kernel.asm	/^global  hwint15$/;"	l
+global	kernel.asm	/^global _start	; 导出 _start$/;"	l
+hwint00	kernel.asm	/^hwint00:                ; Interrupt routine for irq 0 (the clock).$/;"	l
+hwint01	kernel.asm	/^hwint01:                ; Interrupt routine for irq 1 (keyboard)$/;"	l
+hwint02	kernel.asm	/^hwint02:                ; Interrupt routine for irq 2 (cascade!)$/;"	l
+hwint03	kernel.asm	/^hwint03:                ; Interrupt routine for irq 3 (second serial)$/;"	l
+hwint04	kernel.asm	/^hwint04:                ; Interrupt routine for irq 4 (first serial)$/;"	l
+hwint05	kernel.asm	/^hwint05:                ; Interrupt routine for irq 5 (XT winchester)$/;"	l
+hwint06	kernel.asm	/^hwint06:                ; Interrupt routine for irq 6 (floppy)$/;"	l
+hwint07	kernel.asm	/^hwint07:                ; Interrupt routine for irq 7 (printer)$/;"	l
+hwint08	kernel.asm	/^hwint08:                ; Interrupt routine for irq 8 (realtime clock).$/;"	l
+hwint09	kernel.asm	/^hwint09:                ; Interrupt routine for irq 9 (irq 2 redirected)$/;"	l
+hwint10	kernel.asm	/^hwint10:                ; Interrupt routine for irq 10$/;"	l
+hwint11	kernel.asm	/^hwint11:                ; Interrupt routine for irq 11$/;"	l
+hwint12	kernel.asm	/^hwint12:                ; Interrupt routine for irq 12$/;"	l
+hwint13	kernel.asm	/^hwint13:                ; Interrupt routine for irq 13 (FPU exception)$/;"	l
+hwint14	kernel.asm	/^hwint14:                ; Interrupt routine for irq 14 (AT winchester)$/;"	l
+hwint15	kernel.asm	/^hwint15:                ; Interrupt routine for irq 15$/;"	l
+init_8259A	i8259.c	/^PUBLIC void init_8259A()$/;"	f	typeref:typename:PUBLIC void
+init_idt_desc	protect.c	/^PRIVATE void init_idt_desc(unsigned char vector, u8 desc_type,$/;"	f	typeref:typename:PRIVATE void
+init_prot	protect.c	/^PUBLIC void init_prot()$/;"	f	typeref:typename:PUBLIC void
+inval_opcode	kernel.asm	/^inval_opcode:$/;"	l
+inval_tss	kernel.asm	/^inval_tss:$/;"	l
+nmi	kernel.asm	/^nmi:$/;"	l
+overflow	kernel.asm	/^overflow:$/;"	l
+page_fault	kernel.asm	/^page_fault:$/;"	l
+segment_not_present	kernel.asm	/^segment_not_present:$/;"	l
+single_step_exception	kernel.asm	/^single_step_exception:$/;"	l
+spurious_irq	i8259.c	/^PUBLIC void spurious_irq(int irq)$/;"	f	typeref:typename:PUBLIC void
+stack_exception	kernel.asm	/^stack_exception:$/;"	l

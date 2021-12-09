@@ -1,0 +1,180 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/jianshuo/Desktop/CDROM/chapter5/i/boot/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/df3e2f5/
+ARDStruct	loader.asm	/^ARDStruct		equ	BaseOfLoaderPhyAddr + _ARDStruct$/;"	d
+BaseOfStack	boot.asm	/^BaseOfStack		equ	0100h	; 调试状态下堆栈基地址(栈底, 从这个位置向低地址生长/;"	d
+BaseOfStack	boot.asm	/^BaseOfStack		equ	07c00h	; Boot状态下堆栈基地址(栈底, 从这个位置向低地址生长/;"	d
+BaseOfStack	loader.asm	/^BaseOfStack	equ	0100h$/;"	d
+Begin	loader.asm	/^.Begin:$/;"	l
+BootMessage	boot.asm	/^BootMessage:		db	"Booting  "; 9字节, 不够则用空格补齐. 序号 0$/;"	d
+DispAL	loader.asm	/^DispAL:$/;"	l
+DispInt	loader.asm	/^DispInt:$/;"	l
+DispMemInfo	loader.asm	/^DispMemInfo:$/;"	l
+DispReturn	loader.asm	/^DispReturn:$/;"	l
+DispStr	boot.asm	/^DispStr:$/;"	l
+DispStr	loader.asm	/^DispStr:$/;"	l
+DispStrRealMode	loader.asm	/^DispStrRealMode:$/;"	l
+GdtLen	loader.asm	/^GdtLen		equ	$ - LABEL_GDT$/;"	d
+GdtPtr	loader.asm	/^GdtPtr		dw	GdtLen - 1				; 段界限$/;"	d
+GetFATEntry	boot.asm	/^GetFATEntry:$/;"	l
+GetFATEntry	loader.asm	/^GetFATEntry:$/;"	l
+GoOnReading	boot.asm	/^.GoOnReading:$/;"	l
+GoOnReading	loader.asm	/^.GoOnReading:$/;"	l
+InitKernel	loader.asm	/^InitKernel:	; 遍历每一个 Program Header，根据 Program Header 中的信息来确定把什/;"	l
+KernelFileName	loader.asm	/^KernelFileName		db	"KERNEL  BIN", 0	; KERNEL.BIN 之文件名$/;"	d
+KillMotor	loader.asm	/^KillMotor:$/;"	l
+LABEL_CMP_FILENAME	boot.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_CMP_FILENAME	loader.asm	/^LABEL_CMP_FILENAME:$/;"	l
+LABEL_DATA	loader.asm	/^LABEL_DATA:$/;"	l
+LABEL_DESC_FLAT_C	loader.asm	/^LABEL_DESC_FLAT_C:		Descriptor             0,              0fffffh, DA_CR  | DA_32 | DA_LIMIT_4K/;"	l
+LABEL_DESC_FLAT_RW	loader.asm	/^LABEL_DESC_FLAT_RW:		Descriptor             0,              0fffffh, DA_DRW | DA_32 | DA_LIMIT_4/;"	l
+LABEL_DESC_VIDEO	loader.asm	/^LABEL_DESC_VIDEO:		Descriptor	 0B8000h,               0ffffh, DA_DRW                         | D/;"	l
+LABEL_DIFFERENT	boot.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_DIFFERENT	loader.asm	/^LABEL_DIFFERENT:$/;"	l
+LABEL_EVEN_2	boot.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_EVEN_2	loader.asm	/^LABEL_EVEN_2:$/;"	l
+LABEL_FILENAME_FOUND	boot.asm	/^LABEL_FILENAME_FOUND:			; 找到 LOADER.BIN 后便来到这里继续$/;"	l
+LABEL_FILENAME_FOUND	loader.asm	/^LABEL_FILENAME_FOUND:			; 找到 KERNEL.BIN 后便来到这里继续$/;"	l
+LABEL_FILE_LOADED	boot.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_FILE_LOADED	loader.asm	/^LABEL_FILE_LOADED:$/;"	l
+LABEL_GDT	loader.asm	/^LABEL_GDT:			Descriptor             0,                    0, 0						; 空描述符$/;"	l
+LABEL_GET_FAT_ENRY_OK	boot.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GET_FAT_ENRY_OK	loader.asm	/^LABEL_GET_FAT_ENRY_OK:$/;"	l
+LABEL_GOON_LOADING_FILE	boot.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOON_LOADING_FILE	loader.asm	/^LABEL_GOON_LOADING_FILE:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	boot.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR	loader.asm	/^LABEL_GOTO_NEXT_SECTOR_IN_ROOT_DIR:$/;"	l
+LABEL_GO_ON	boot.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_GO_ON	loader.asm	/^LABEL_GO_ON:$/;"	l
+LABEL_NO_KERNELBIN	loader.asm	/^LABEL_NO_KERNELBIN:$/;"	l
+LABEL_NO_LOADERBIN	boot.asm	/^LABEL_NO_LOADERBIN:$/;"	l
+LABEL_PM_START	loader.asm	/^LABEL_PM_START:$/;"	l
+LABEL_SEARCH_FOR_KERNELBIN	loader.asm	/^LABEL_SEARCH_FOR_KERNELBIN:$/;"	l
+LABEL_SEARCH_FOR_LOADERBIN	boot.asm	/^LABEL_SEARCH_FOR_LOADERBIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	boot.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_SEARCH_IN_ROOT_DIR_BEGIN	loader.asm	/^LABEL_SEARCH_IN_ROOT_DIR_BEGIN:$/;"	l
+LABEL_START	boot.asm	/^LABEL_START:	$/;"	l
+LABEL_START	loader.asm	/^LABEL_START:			; <--- 从这里开始 *************$/;"	l
+LoadMessage	loader.asm	/^LoadMessage:		db	"Loading  "$/;"	d
+LoaderFileName	boot.asm	/^LoaderFileName		db	"LOADER  BIN", 0	; LOADER.BIN 之文件名$/;"	d
+MemChkBuf	loader.asm	/^MemChkBuf		equ	BaseOfLoaderPhyAddr + _MemChkBuf$/;"	d
+MemChkFail	loader.asm	/^.MemChkFail:$/;"	l
+MemChkLoop	loader.asm	/^.MemChkLoop:$/;"	l
+MemChkOK	loader.asm	/^.MemChkOK:$/;"	l
+MemCpy	loader.asm	/^MemCpy:$/;"	l
+Message1	boot.asm	/^Message1		db	"Ready.   "; 9字节, 不够则用空格补齐. 序号 1$/;"	d
+Message1	loader.asm	/^Message1		db	"Ready.   "$/;"	d
+Message2	boot.asm	/^Message2		db	"No LOADER"; 9字节, 不够则用空格补齐. 序号 2$/;"	d
+Message2	loader.asm	/^Message2		db	"No KERNEL"$/;"	d
+MessageLength	boot.asm	/^MessageLength		equ	9$/;"	d
+MessageLength	loader.asm	/^MessageLength		equ	9$/;"	d
+NoAction	loader.asm	/^.NoAction:$/;"	l
+ReadSector	boot.asm	/^ReadSector:$/;"	l
+ReadSector	loader.asm	/^ReadSector:$/;"	l
+SelectorFlatC	loader.asm	/^SelectorFlatC		equ	LABEL_DESC_FLAT_C	- LABEL_GDT$/;"	d
+SelectorFlatRW	loader.asm	/^SelectorFlatRW		equ	LABEL_DESC_FLAT_RW	- LABEL_GDT$/;"	d
+SelectorVideo	loader.asm	/^SelectorVideo		equ	LABEL_DESC_VIDEO	- LABEL_GDT + SA_RPL3$/;"	d
+SetupPaging	loader.asm	/^SetupPaging:$/;"	l
+StackSpace	loader.asm	/^StackSpace:	times	1000h	db	0$/;"	l
+TopOfStack	loader.asm	/^TopOfStack	equ	BaseOfLoaderPhyAddr + $	; 栈顶$/;"	d
+_ARDStruct	loader.asm	/^_ARDStruct:			; Address Range Descriptor Structure$/;"	l
+_MemChkBuf	loader.asm	/^_MemChkBuf:	times	256	db	0$/;"	l
+_dwBaseAddrHigh	loader.asm	/^	_dwBaseAddrHigh:	dd	0$/;"	d
+_dwBaseAddrLow	loader.asm	/^	_dwBaseAddrLow:		dd	0$/;"	d
+_dwDispPos	loader.asm	/^_dwDispPos:			dd	(80 * 6 + 0) * 2	; 屏幕第 6 行, 第 0 列。$/;"	d
+_dwLengthHigh	loader.asm	/^	_dwLengthHigh:		dd	0$/;"	d
+_dwLengthLow	loader.asm	/^	_dwLengthLow:		dd	0$/;"	d
+_dwMCRNumber	loader.asm	/^_dwMCRNumber:			dd	0	; Memory Check Result$/;"	d
+_dwMemSize	loader.asm	/^_dwMemSize:			dd	0$/;"	d
+_dwType	loader.asm	/^	_dwType:		dd	0$/;"	d
+_szMemChkTitle	loader.asm	/^_szMemChkTitle:			db	"BaseAddrL BaseAddrH LengthLow LengthHigh   Type", 0Ah, 0$/;"	d
+_szRAMSize	loader.asm	/^_szRAMSize:			db	"RAM size:", 0$/;"	d
+_szReturn	loader.asm	/^_szReturn:			db	0Ah, 0$/;"	d
+add	boot.asm	/^	add	di, 01Ah		; di -> 首 Sector$/;"	d
+add	boot.asm	/^	add	di, 20h			;      ┃$/;"	d
+add	loader.asm	/^	add	dh, 3			; 从第 3 行往下显示$/;"	d
+add	loader.asm	/^	add	di, 01Ah		; di -> 首 Sector$/;"	d
+add	loader.asm	/^	add	di, 20$/;"	d
+add	loader.asm	/^	add	di, 20h			;     ┃$/;"	d
+and	boot.asm	/^	and	dh, 1			; dh & 1 = 磁头号$/;"	d
+and	boot.asm	/^	and	di, 0FFE0h		; di -> 当前条目的开始$/;"	d
+and	boot.asm	/^	and	di, 0FFE0h		; else ┓	di &= E0 为了让它指向本条目开头$/;"	d
+and	loader.asm	/^	and	dh, 1			; dh & 1 = 磁头号$/;"	d
+and	loader.asm	/^	and	di, 0FFE0h		; else┓	这时di的值不知道是什么, di &= e0 为了让它是 20h 的倍/;"	d
+and	loader.asm	/^	and	di, 0FFF0h		; di -> 当前条目的开始$/;"	d
+bOdd	boot.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+bOdd	loader.asm	/^bOdd			db	0		; 奇数还是偶数$/;"	d
+begin	loader.asm	/^.begin:$/;"	l
+cmp	boot.asm	/^	cmp	dx, 0					; ┓循环次数控制,$/;"	d
+cmp	boot.asm	/^	cmp	dx, 0$/;"	d
+cmp	loader.asm	/^	cmp	dx, 0					; ┓$/;"	d
+cmp	loader.asm	/^	cmp	dx, 0$/;"	d
+dec	boot.asm	/^	dec	dx					; ┛就跳到下一个 Sector$/;"	d
+dec	boot.asm	/^dec	cx$/;"	l
+dec	loader.asm	/^	dec	dx					; ┛$/;"	d
+dw	boot.asm	/^dw 	0xaa55				; 结束标志$/;"	l
+dwBaseAddrHigh	loader.asm	/^	dwBaseAddrHigh	equ	BaseOfLoaderPhyAddr + _dwBaseAddrHigh$/;"	d
+dwBaseAddrLow	loader.asm	/^	dwBaseAddrLow	equ	BaseOfLoaderPhyAddr + _dwBaseAddrLow$/;"	d
+dwDispPos	loader.asm	/^dwDispPos		equ	BaseOfLoaderPhyAddr + _dwDispPos$/;"	d
+dwKernelSize	loader.asm	/^dwKernelSize		dd	0		; KERNEL.BIN 文件大小$/;"	d
+dwLengthHigh	loader.asm	/^	dwLengthHigh	equ	BaseOfLoaderPhyAddr + _dwLengthHigh$/;"	d
+dwLengthLow	loader.asm	/^	dwLengthLow	equ	BaseOfLoaderPhyAddr + _dwLengthLow$/;"	d
+dwMCRNumber	loader.asm	/^dwMCRNumber		equ	BaseOfLoaderPhyAddr + _dwMCRNumber$/;"	d
+dwMemSize	loader.asm	/^dwMemSize		equ	BaseOfLoaderPhyAddr + _dwMemSize$/;"	d
+dwType	loader.asm	/^	dwType		equ	BaseOfLoaderPhyAddr + _dwType$/;"	d
+inc	boot.asm	/^	inc	di$/;"	d
+inc	loader.asm	/^	inc	di$/;"	d
+loop	loader.asm	/^.loop:					;{$/;"	l
+mov	boot.asm	/^	mov	dh, 0			; "Booting  "$/;"	d
+mov	boot.asm	/^	mov	dh, 1			; "Ready."$/;"	d
+mov	boot.asm	/^	mov	dh, 2			; "No LOADER."$/;"	d
+mov	boot.asm	/^	mov	dh, al			; dh <- y$/;"	d
+mov	boot.asm	/^	mov	di, OffsetOfLoader	; es:di -> BaseOfLoader:0100 = BaseOfLoader*10h+100$/;"	d
+mov	boot.asm	/^	mov	dl, 0$/;"	d
+mov	boot.asm	/^	mov	dl, [BS_DrvNum]		; 驱动器号 (0 表示 A 盘)$/;"	d
+mov	boot.asm	/^	mov	ds, ax$/;"	d
+mov	boot.asm	/^	mov	dx, 0184fh		; 右下角: (80, 50)$/;"	d
+mov	boot.asm	/^	mov	dx, 10h$/;"	d
+mov	boot.asm	/^	mov	dx, RootDirSectors$/;"	d
+mov	loader.asm	/^	mov	dh, 0			; "Loading  "$/;"	d
+mov	loader.asm	/^	mov	dh, 1			; "Ready."$/;"	d
+mov	loader.asm	/^	mov	dh, 2			; "No KERNEL."$/;"	d
+mov	loader.asm	/^	mov	dh, al			; dh <- y$/;"	d
+mov	loader.asm	/^	mov	di, OffsetOfKernelFile	; es:di -> BaseOfKernelFile:???? = BaseOfKernelFile*10h+????$/;"	d
+mov	loader.asm	/^	mov	di, _MemChkBuf		; es:di 指向一个地址范围描述符结构（Address Range Descriptor /;"	d
+mov	loader.asm	/^	mov	dl, 0$/;"	d
+mov	loader.asm	/^	mov	dl, [BS_DrvNum]		; 驱动器号 (0 表示 A 盘)$/;"	d
+mov	loader.asm	/^	mov	dl, al$/;"	d
+mov	loader.asm	/^	mov	ds, ax$/;"	d
+mov	loader.asm	/^	mov	dx, 03F2h$/;"	d
+mov	loader.asm	/^	mov	dx, 10h$/;"	d
+mov	loader.asm	/^	mov	dx, RootDirSectors$/;"	d
+mul	boot.asm	/^	mul	dh$/;"	d
+mul	loader.asm	/^	mul	dh$/;"	d
+no_remainder	loader.asm	/^.no_remainder:$/;"	l
+org	loader.asm	/^org  0100h$/;"	l
+out	loader.asm	/^	out	dx, al$/;"	d
+pop	boot.asm	/^	pop	dx$/;"	d
+pop	loader.asm	/^	pop	dx$/;"	d
+push	boot.asm	/^	push	dx$/;"	d
+push	loader.asm	/^	push	dx$/;"	d
+szMemChkTitle	loader.asm	/^szMemChkTitle		equ	BaseOfLoaderPhyAddr + _szMemChkTitle$/;"	d
+szRAMSize	loader.asm	/^szRAMSize		equ	BaseOfLoaderPhyAddr + _szRAMSize$/;"	d
+szReturn	loader.asm	/^szReturn		equ	BaseOfLoaderPhyAddr + _szReturn$/;"	d
+times	boot.asm	/^times 	510-($-$$)	db	0	; 填充剩下的空间，使生成的二进制代码恰好为512字节$/;"	l
+wRootDirSizeForLoop	boot.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数, 在循环中会递减/;"	d
+wRootDirSizeForLoop	loader.asm	/^wRootDirSizeForLoop	dw	RootDirSectors	; Root Directory 占用的扇区数$/;"	d
+wSectorNo	boot.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+wSectorNo	loader.asm	/^wSectorNo		dw	0		; 要读取的扇区号$/;"	d
+xor	boot.asm	/^	xor	dl, dl	; ┣ 软驱复位$/;"	d
+xor	boot.asm	/^	xor	dx, dx			; 现在 ax 中是 FATEntry 在 FAT 中的偏移量. 下面来计算 FATEntry 在哪/;"	d
+xor	loader.asm	/^	xor	dl, dl	; ┣ 软驱复位$/;"	d
+xor	loader.asm	/^	xor	dx, dx			; 现在 ax 中是 FATEntry 在 FAT 中的偏移量. 下面来计算 FATEntry 在哪/;"	d
