@@ -34,14 +34,14 @@ PUBLIC void clock_handler(int irq)
 	if (++ticks >= MAX_TICKS)
 		ticks = 0;
 
-	if (ticks % TIME_PIECE == 0) {
-		char str[16];
-		itoa(str, p_proc_ready - proc_table);
-		int len = strlen(str);
-		str[len] = ' ';
-		str[len + 1] = 0;
-		printl(str);	
-	}
+	// if (ticks % TIME_PIECE == 0) {
+	// 	char str[16];
+	// 	itoa(str, p_proc_ready - proc_table);
+	// 	int len = strlen(str);
+	// 	str[len] = ' ';
+	// 	str[len + 1] = 0;
+	// 	printl(str);	
+	// }
 	p_proc_ready->ticks--;							//程序剩余时间
 	if (key_pressed) {
 		inform_int(TASK_TTY);

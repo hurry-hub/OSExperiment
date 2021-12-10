@@ -82,7 +82,7 @@ struct task {
 /* Number of tasks & processes */
 #define NR_TASKS		5
 #define NR_PROCS		32
-#define NR_NATIVE_PROCS		2
+#define NR_NATIVE_PROCS		4
 #define FIRST_PROC		proc_table[0]
 #define LAST_PROC		proc_table[NR_TASKS + NR_PROCS - 1]
 
@@ -115,5 +115,8 @@ struct task {
 				STACK_SIZE_HD + \
 				STACK_SIZE_FS + \
 				STACK_SIZE_MM + \
-				STACK_SIZE_INIT)
+				STACK_SIZE_INIT + \
+				STACK_SIZE_TESTA + \
+				STACK_SIZE_TESTB + \
+				STACK_SIZE_TESTC)
 

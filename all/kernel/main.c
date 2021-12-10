@@ -338,11 +338,12 @@ void shabby_shell(const char * tty_name)
 					while(foo > 0) {foo--;}
 					// 现在是shell所fork出的一个子进程，这个进程将要执行一个命令
 					char tmp_name[40];
-					for(int i = 0; cmd_argv[0][i] != ' ' && cmd_argv[0][i] != 0; i ++)
-						tmp_name[i] = argv[0][i]; 
+					for(int j = 0; cmd_argv[i][0][j] != ' ' && cmd_argv[i][0][j] != 0; j ++)
+						tmp_name[j] = cmd_argv[i][0][j]; 
+					printf("%s\n", tmp_name);
 					if(!strcmp(tmp_name, "parity_check_open"))
-						parity_check_closed = cmd_argv[1][0] - '0';
-					else if (parity_check_closed ||  check_parity(argv[0]) == 1)
+						parity_check_closed = cmd_argv[i][1][0] - '0';
+					else if (parity_check_closed ||  check_parity(cmd_argv[i][0]) == 1)
 						execv(cmd_argv[i][0], cmd_argv[i]);
 					else 
 						printf("Attention! Wrong executable file.\n");
@@ -419,21 +420,21 @@ void TestA()
 	for(;;);
 }
 
-// /*======================================================================*
-//                                TestB
-//  *======================================================================*/
-// void TestB()
-// {
-// 	for(;;);
-// }
+/*======================================================================*
+                               TestB
+ *======================================================================*/
+void TestB()
+{
+	for(;;);
+}
 
-// /*======================================================================*
-//                                TestB
-//  *======================================================================*/
-// void TestC()
-// {
-// 	for(;;);
-// }
+/*======================================================================*
+                               TestB
+ *======================================================================*/
+void TestC()
+{
+	for(;;);
+}
 
 /*****************************************************************************
  *                                panic
@@ -453,4 +454,5 @@ PUBLIC void panic(const char *fmt, ...)
 	/* should never arrive here */
 	__asm__ __volatile__("ud2");
 }
+
 
