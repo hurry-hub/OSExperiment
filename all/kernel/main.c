@@ -340,7 +340,7 @@ void shabby_shell(const char * tty_name)
 					char tmp_name[40];
 					for(int j = 0; cmd_argv[i][0][j] != ' ' && cmd_argv[i][0][j] != 0; j ++)
 						tmp_name[j] = cmd_argv[i][0][j]; 
-					printf("%s\n", tmp_name);
+					//printf("%s\n", tmp_name);
 					if(!strcmp(tmp_name, "parity_check_open"))
 						parity_check_closed = cmd_argv[i][1][0] - '0';
 					else if (parity_check_closed ||  check_parity(cmd_argv[i][0]) == 1)
