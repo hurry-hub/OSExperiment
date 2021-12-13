@@ -283,6 +283,7 @@ alloc_pages:
 	mov al, byte [esi]
 	test al, bl
 	jnz .next_bit	; 这一位为1，已经分配，直接考虑下一位
+	xchg bx, bx
 	or al, bl		; 这一位为0，可以分配，将其修改为1
 	mov byte [esi], al
 
@@ -399,7 +400,7 @@ free_pages:
 	mov ebx, dword [_LinearPageBuf  + esi]
 	and ebx, 003ff000h	; 取21...12位，即PTE在页表中的偏移
 	shr ebx, 12
-	xchg bx, bx
+	;xchg bx, bx
 	mov eax, dword [es: edi + 4 * ebx]		; PTE
 
 	; 处理这个PTE： 1.修改P位 2.找到其映射的物理地址
@@ -420,12 +421,13 @@ free_pages:
 	mov cl, dl
 	shr bl, cl
 	pop ecx
+	xchg bx, bx
 	xor bl, 0ffh
 	mov di, ax
 	; one-time bitmap
-	;mov bh, byte [_BitMap + di]
-	;and bh, bl
-	;mov byte [_BitMap + di], bh
+	; mov bh, byte [_BitMap + di]
+	; and bh, bl
+	; mov byte [_BitMap + di], bh
 	
 	add esi, 4		; esi跳到下一个要释放的LinearPage
 	loop .free_one_Linear

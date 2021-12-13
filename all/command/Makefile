@@ -12,7 +12,7 @@ CFLAGS		= -I ../include/ -c -fno-builtin -fno-stack-protector -Wall
 LDFLAGS		= -Ttext 0x1000
 DASMFLAGS	= -D
 LIB		= ../lib/orangescrt.a
-BIN		= echo pwd inject parity_check_open calculator pwd1 hello ls ping pang stkovfl
+BIN		= echo pwd inject parity_check_open calculator hello ls ping pang stkovfl game
 
 # All Phony Targets
 .PHONY : everything final clean realclean disasm all install
@@ -71,10 +71,10 @@ calculator.o: calculator.c ../include/type.h ../include/stdio.h
 calculator : calculator.o start.o $(LIB)
 	$(LD) $(LDFLAGS) -o $@ $?
 
-pwd1.o: pwd1.c ../include/type.h ../include/stdio.h
+game.o: game.c ../include/type.h ../include/stdio.h
 	$(CC) $(CFLAGS) -o $@ $<
 
-pwd1 : pwd1.o start.o $(LIB)
+game : game.o start.o $(LIB)
 	$(LD) $(LDFLAGS) -o $@ $?
 
 hello.o: hello.c ../include/type.h ../include/stdio.h
